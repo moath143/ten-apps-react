@@ -1,0 +1,24 @@
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btns button {
+    background-color: #7060FE;
+    border: none;
+    padding: 12px 55px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btns button:nth-of-type(2){
+margin: 0 5px;
+}
+
+.count{
+    font-weight: bold;
+    font-size: 25px;
+}

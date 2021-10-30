@@ -1,0 +1,106 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input {
+  width: 30%;
+}
+
+form button,
+.btns button {
+  background-color: #7060fe;
+  border: none;
+  padding: 5px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.update {
+  margin-top: 20px;
+  /* display: none; */
+}
+
+.update button {
+  border: none;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffc107;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.update button:last-of-type{
+  background-color: #343A40;
+}
+
+.update input {
+  background-color: #0d0e15;
+  border: none;
+  outline: none;
+  color: #7060fe;
+  padding: 5px 0;
+  text-indent: 5px;
+  width: 50%;
+}
+
+.task_number {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.btns {
+  margin-top: 0;
+}
+
+.btns button:first-of-type {
+  background-color: #28a745;
+}
+.btns button:last-of-type {
+  background-color: #dc3545;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.items .text {
+  background-color: #292c40;
+  width: 45%;
+}
+
+.items .text {
+  text-indent: 10px;
+  padding: 6px 0;
+}
+
+.margin-up {
+  margin-top: 50px;
+}
+
+.number {
+  width: 0px;
+  height: 0px;
+  background: #292c40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
