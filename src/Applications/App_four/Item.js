@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
 function Item({ element, index }) {
+  // console.log(element, 'element from item file');
     const [displayItem, setDisplayItem] = useState('none')
     const[updateText, setUpdateText] = useState('')
     const dispatch = useDispatch()
@@ -17,14 +18,16 @@ function Item({ element, index }) {
     let deleteItem = (element) => {
         dispatch({type: 'DELETE_ITEM', payload: element})
     }
-    let updateItem = (e) => {
-        // e.preventDefault()
-        dispatch({
-          type: "UPDATE_ITEM",
-          payload: { oldItem: e, newItem: updateText },
-        });
-        setDisplayItem("none");
-    }
+    let updateItem = (element) => {
+      // element.preventDefault();
+      console.log(element);
+      console.log(updateText);
+      dispatch({
+        type: "UPDATE_ITEM",
+        payload: { oldItem: element, newItem: updateText },
+      });
+      setDisplayItem("none");
+    };
   return (
     <>
       <div key={index} className="items">

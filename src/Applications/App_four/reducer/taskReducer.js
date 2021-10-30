@@ -18,9 +18,9 @@ function taskReducer(state = iniData, action) {
       ...state,
       toDo: state.toDo.map((el) => {
         if (el === action.payload.oldItem) {
-          el = action.payload.newItem
-          return el
+          return el = action.payload.newItem;
         }
+        return el;
       })
     }
   }
